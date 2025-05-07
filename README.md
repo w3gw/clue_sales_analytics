@@ -84,7 +84,7 @@ Available endpoints:
 
 1. Upload CSV
 ```
-POST /upload-csv
+POST /api/upload-csv
 Content-Type: multipart/form-data
 Body: file (CSV file)
 Response: UploadResponse with success status and processing details
@@ -92,7 +92,7 @@ Response: UploadResponse with success status and processing details
 
 2. Monthly Summary
 ```
-GET /monthly-summary
+GET /api/monthly-summary
 Query Parameters:
 - start_date (optional): YYYY-MM-DD
 - end_date (optional): YYYY-MM-DD
@@ -102,7 +102,7 @@ Query Parameters:
 
 3. Top Products
 ```
-GET /top-products
+GET /api/top-products
 Query Parameters:
 - limit (optional, default=5): Number of top products to return
 - start_date (optional): YYYY-MM-DD
